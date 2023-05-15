@@ -62,7 +62,7 @@ export default async function Post({params :{postId}}:Props) {
     <p className="mt-0 text-sm">
         {pubDate}
     </p>
-    <article>
+    <article className="text-rose-950 ">
         {content}
     </article>
     <section>
