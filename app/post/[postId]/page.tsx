@@ -58,8 +58,8 @@ export default async function Post({params :{postId}}:Props) {
 
   return (
     <>
-    <h2 className="text-3xl mt-4 mb-0">{meta.title}</h2>
-    <p className="mt-0 text-sm">
+    <h2 className="text-3xl mt-4 mb-0 text-indigo-900" >{meta.title}</h2>
+    <p className="mt-0 text-sm text-indigo-900">
         {pubDate}
     </p>
     <article className="text-rose-950 ">

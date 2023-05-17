@@ -1,4 +1,3 @@
-import rehypeAutolinkHeadings from "rehype-autolink-headings/lib";
 import rehypeHighlight from "rehype-highlight/lib";
 import rehypeSlug from "rehype-slug";
 import { compileMDX } from "next-mdx-remote/rsc";
@@ -46,9 +45,6 @@ export async function getPostByName(
             rehypePlugins: [
                 rehypeHighlight,
                 rehypeSlug,
-                [rehypeAutolinkHeadings, {
-                    behavior: 'wrap'
-                }],
             ],
         },
     }
