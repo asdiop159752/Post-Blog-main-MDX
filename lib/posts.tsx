@@ -16,7 +16,7 @@ export async function getPostByName(
   fileName: string
 ): Promise<BlogPost | undefined> {
   const res = await fetch(
-    `https://raw.githubusercontent.com/asdiop159752/BlogPost/master/${fileName}`,
+    `https://raw.githubusercontent.com/nguyenxuantruong03/MDX-BlogPost/master/${fileName}`,
     {
       headers: {
         Accept: "application/vnd.github+json",
@@ -69,7 +69,7 @@ export async function getPostsMeta(): Promise<Meta[] | undefined> {
   including all files and directories recursively. The response will be in JSON format and will
   contain information about each file, including its path. */
   const res = await fetch(
-    "https://api.github.com/repos/asdiop159752/BlogPost/git/trees/master?recursive=1",
+    "https://api.github.com/repos/nguyenxuantruong03/MDX-BlogPost/git/trees/master?recursive=1",
     {
       headers: {
         Accept: "application/vnd.github+json",
