@@ -1,7 +1,7 @@
 import Post from "./components/Posts"
 import Myprofile from './components/Myprofile'
 
-export const revalidate = 86400
+export const revalidate = 0
 export default function Home() {
   return (
     <div className="mx-auto">

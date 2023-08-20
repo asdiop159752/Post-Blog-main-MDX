@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import 'highlight.js/styles/github-dark.css'
 
-export const revalidate = 86400
+export const revalidate =0
 
 /**
  * The type defines a Props object with a parameter called "postId" that is a string.
